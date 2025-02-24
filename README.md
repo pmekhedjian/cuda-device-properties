@@ -23,7 +23,7 @@ The nvcc and nvfortran commands are available (for free) from the [Nvidia HPC SD
 **Example output**:
 
 ```
- Device             0 :NVIDIA GeForce RTX 4070
+ Device 0 :NVIDIA GeForce RTX 4070
    pageableMemoryAccess                    :            1
    hostNativeAtomicSupported               :            0
    pageableMemoryAccessUsesHostPageTables  :            0
@@ -36,4 +36,8 @@ See reference table below, from Nvidia's CUDA documentation (linked below):
 
 <img src="https://github.com/pmekhedjian/cuda-device-properties/blob/production/Unified%20Memory%20Support%20Levels.png">
 
-Reference: [Nvidia documentation: CUDA C Programming Guide - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
+References: 
+
+- [Nvidia documentation: CUDA C Programming Guide - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
+
+- [Paul Mekhedjian - Personal Website - CUDA: Unified vs. Managed Memory](https://paulmekhedjian.com/2025/02/cuda-unified-vs-managed-memory/)
