@@ -23,7 +23,7 @@ The nvcc and nvfortran commands are available (for free) from the [Nvidia HPC SD
 **Example output**:
 
 ```
- Device             0 :NVIDIA RTX 4070
+ Device             0 :NVIDIA GeForce RTX 4070
    pageableMemoryAccess                    :            1
    hostNativeAtomicSupported               :            0
    pageableMemoryAccessUsesHostPageTables  :            0
