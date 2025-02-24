@@ -1,6 +1,6 @@
 # cuda-device-properties
 
-**Background**: CUDA's Unified Memory makes it incredibly easy to program for GPU application, but not all CUDA Managed Memory is Unified Memory. You should know what your Nvidia GPU supports before you start coding in CUDA. This repository houses CUDA applications (your choice of either CUDA C++ or CUDA Fortran) that test for device properties related to CUDA Unified and/or Managed Memory. 
+**Background**: CUDA's Unified Memory makes it easy to program (and manage memory) for CUDA applications, but not all CUDA Managed Memory is Unified Memory. You should know what your Nvidia GPU supports before you start coding in CUDA. This repository houses CUDA applications (your choice of either CUDA C++ or CUDA Fortran) that test for device properties related to CUDA Unified and/or Managed Memory. 
 
 The following parameters are queried from the [**cudaDeviceProp**](https://docs.nvidia.com/cuda/cuda-runtime-api/structcudaDeviceProp.html#structcudaDeviceProp) struct:
 - pageableMemoryAccess
