@@ -1,0 +1,37 @@
+! A simple CUDA Fortran application to query and print certain device properties
+! that help determine if a GPU supports full CUDA Unified Memory or partial
+! CUDA Managed Memory.
+
+program check_unified_memory
+  use cudafor
+  implicit none
+
+  integer :: i, istat, numDevices
+  type(cudaDeviceProp) :: prop
+
+  ! Get the number of CUDA-capable GPUs
+  istat = cudaGetDeviceCount(numDevices)
+  if (istat /= cudaSuccess) then
+     print *, "Error: Unable to get device count."
+     stop
+  end if
+
+  ! Iterate over each GPU and retrieve device properties
+  do i = 0, numDevices - 1
+     istat = cudaGetDeviceProperties(prop, i)
+     if (istat /= cudaSuccess) then
+        print *, "Error: Unable to get properties for device ", i
+     else
+        print *, "-------------------------------------------------"
+        print *, "Device ", i, ":", trim(prop%name)
+        print *, "  pageableMemoryAccess                    :", prop%pageableMemoryAccess
+        print *, "  hostNativeAtomicSupported               :", prop%hostNativeAtomicSupported
+        print *, "  pageableMemoryAccessUsesHostPageTables  :", prop%pageableMemoryAccessUsesHostPageTables
+        print *, "  directManagedMemAccessFromHost          :", prop%directManagedMemAccessFromHost
+        print *, "  concurrentManagedAccess                 :", prop%concurrentManagedAccess
+        print *, "  managedMemory                           :", prop%managedMemory
+        print *, "-------------------------------------------------"
+     end if
+  end do
+
+end program check_unified_memory
