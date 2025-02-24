@@ -32,6 +32,8 @@ The nvcc and nvfortran commands are available (for free) from the [Nvidia HPC SD
    managedMemory                           :            1
 ```
 
-See attached image or reference below for reference table.
+See reference table below, from Nvidia's CUDA documentation (linked below):
 
-Reference: [Nvidia documentation - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
+<img src="https://github.com/pmekhedjian/cuda-device-properties/blob/production/Unified%20Memory%20Support%20Levels.png">
+
+Reference: [Nvidia documentation: CUDA C Programming Guide - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
