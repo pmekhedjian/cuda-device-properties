@@ -20,4 +20,18 @@ nvfortran -o get-properties get-properties.cuf
 ```
 The nvcc and nvfortran commands are available (for free) from the [Nvidia HPC SDK](https://developer.nvidia.com/hpc-sdk) website. 
 
+**Example output**:
+
+```
+ Device             0 :NVIDIA RTX 4070
+   pageableMemoryAccess                    :            1
+   hostNativeAtomicSupported               :            0
+   pageableMemoryAccessUsesHostPageTables  :            0
+   directManagedMemAccessFromHost          :            0
+   concurrentManagedAccess                 :            1
+   managedMemory                           :            1
+```
+
+See attached image or reference below for reference table.
+
 Reference: [Nvidia documentation - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
