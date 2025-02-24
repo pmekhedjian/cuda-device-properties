@@ -1,3 +1,9 @@
+/*
+A simple CUDA C++ application to query and print certain device properties
+that help determine if a GPU supports full CUDA Unified Memory or partial
+CUDA Managed Memory.
+*/
+
 #include <iostream>
 #include <cuda_runtime.h>
 
