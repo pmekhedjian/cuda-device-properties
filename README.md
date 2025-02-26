@@ -45,7 +45,7 @@ Say what, if I have `managedMemory` and `concurrentManagedAccess` set to 1, but 
 
 _"Linux HMM requires Linux kernel version 6.1.24+, 6.2.11+ or 6.3+, devices with compute capability 7.5 or higher and a CUDA driver version 535+ installed with Open Kernel Modules."_
 
-**Switching to Open Kernel Modules on CUDA driver version 535+ on Ubuntu 24.04 TLS (running Linux kernel v6.8)**:
+**After having switched to Open Kernel Modules on CUDA v12.2, driver version 535+ on kernel ~6.8**:
 
 ```
 $ ./get-properties
@@ -59,6 +59,8 @@ $ ./get-properties
    managedMemory                           :            1
 ```
 So cool! Learn more about HMM for GPU development with CUDA [here](https://developer.nvidia.com/blog/simplifying-gpu-application-development-with-heterogeneous-memory-management/). 
+
+p.s. Did you know that you can still use HMM on Linux kernel 4.x and 5.x? Google to find out more.
 
 References: 
 
