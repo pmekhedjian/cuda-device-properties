@@ -64,6 +64,6 @@ p.s. Did you know that you can still use HMM on Linux kernel 4.x and 5.x? Google
 
 References: 
 
-- [Paul Mekhedjian - Personal Website - CUDA: Unified vs. Managed Memory](https://paulmekhedjian.com/2025/02/cuda-unified-vs-managed-memory/)
+- [Paul Mekhedjian - Personal Website - CUDA: Unified vs. Managed Memory](https://paulmekhedjian.com/2025/02/cuda-unified-and-managed-memory/#cuda-unified-and-managed-memory)
 - [Nvidia documentation: CUDA C Programming Guide - System Requirements for Unified Memory](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#system-requirements-for-unified-memory)
 - [Nvidia blog: Simplifying GPU Application Development with Heterogeneous Memory Management](https://developer.nvidia.com/blog/simplifying-gpu-application-development-with-heterogeneous-memory-management/)
